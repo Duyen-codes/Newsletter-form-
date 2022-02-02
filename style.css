@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-color: #277348;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 345px;
+}
+
+form {
+  border-radius: 0.5rem;
+  background-color: #f2f2f2;
+  padding: 2rem 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+p.form-desc {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+label {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin: 0.8rem 0;
+  position: relative;
+}
+
+i {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(50%);
+  font-size: 1.2rem;
+  color: rgb(156, 154, 154);
+}
+
+.form-control label {
+  padding: 5px 0;
+}
+
+.form-control input {
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.form-control input:focus {
+  border: 1px solid #277348;
+}
+
+.form-control input:focus::placeholder {
+  visibility: hidden;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #f26e50;
+  color: white;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  border: none;
+  margin: 1rem auto 2rem;
+  width: 250px;
+}
+
+input[type="submit"]:hover {
+  background-color: #d99a4e;
+}
+
+.agree {
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.term-condition,
+.privacy,
+.login {
+  color: #f26e50;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.para-account {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 300;
+  margin: 2rem 0;
+}
